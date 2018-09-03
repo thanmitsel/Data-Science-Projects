@@ -3,9 +3,17 @@ import numpy as np
 
 def read_files():
     # Read files from directory and append them 
-    data1=pd.read_csv('Data/File1.txt', sep=" ", header=None)
-    data2=pd.read_csv('Data/File2.txt', sep=" ", header=None)
+    data1=pd.read_csv('../../CerData/File1.txt', sep=" ", header=None)
+    data2=pd.read_csv('../../CerData/File2.txt', sep=" ", header=None)
+    data3=pd.read_csv('../../CerData/File3.txt', sep=" ", header=None)
+    data4=pd.read_csv('../../CerData/File4.txt', sep=" ", header=None)
+    data5=pd.read_csv('../../CerData/File5.txt', sep=" ", header=None)
+    data6=pd.read_csv('../../CerData/File6.txt', sep=" ", header=None)
     data=data1.append(data2)
+    data=data.append(data3)
+    data=data.append(data4)
+    data=data.append(data5)
+    data=data.append(data6)
     data.columns=['MeterID', 'Timecode', 'Consumption']
     return data
 
@@ -29,5 +37,5 @@ def find_full_values(data):
                 df=pd.concat([df, data["Consumption"].iloc[reduced_data[i]-17519:reduced_data[i]+1].reset_index(drop=True)], axis=1)
             ID.append(data["MeterID"].iloc[reduced_data[i]])
     df.columns=ID
-    df=np.transpose(df)
+    df=df.transpose()
     return df
