@@ -6,6 +6,8 @@ import pandas as pd
 import manipulate_files
 import fraud_simulation
 import prediction
+import clustering
+
 # Reads .txt files
 data=manipulate_files.read_files()
 print('Files read')
@@ -26,3 +28,6 @@ print('Fraud Simulation done')
 
 # Computes Performance
 prediction.liblinear(X,Y)
+
+# Clustering with PCA and K-Means
+clustering.kmeans(X)

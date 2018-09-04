@@ -5,15 +5,15 @@ def read_files():
     # Read files from directory and append them 
     data1=pd.read_csv('../../CerData/File1.txt', sep=" ", header=None)
     data2=pd.read_csv('../../CerData/File2.txt', sep=" ", header=None)
-    data3=pd.read_csv('../../CerData/File3.txt', sep=" ", header=None)
-    data4=pd.read_csv('../../CerData/File4.txt', sep=" ", header=None)
-    data5=pd.read_csv('../../CerData/File5.txt', sep=" ", header=None)
-    data6=pd.read_csv('../../CerData/File6.txt', sep=" ", header=None)
+    #data3=pd.read_csv('../../CerData/File3.txt', sep=" ", header=None)
+    #data4=pd.read_csv('../../CerData/File4.txt', sep=" ", header=None)
+    #data5=pd.read_csv('../../CerData/File5.txt', sep=" ", header=None)
+    #data6=pd.read_csv('../../CerData/File6.txt', sep=" ", header=None)
     data=data1.append(data2)
-    data=data.append(data3)
-    data=data.append(data4)
-    data=data.append(data5)
-    data=data.append(data6)
+    #data=data.append(data3)
+    #data=data.append(data4)
+    #data=data.append(data5)
+    #data=data.append(data6)
     data.columns=['MeterID', 'Timecode', 'Consumption']
     return data
 
