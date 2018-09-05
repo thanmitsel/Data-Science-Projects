@@ -13,7 +13,7 @@ def kmeans(X):
     kmeans_model=KMeans(n_clusters=3, random_state=1).fit(reduced_data)
     labels=kmeans_model.labels_
     # Step size of the mesh. Decrease to increase the quality of the VQ.
-    h = .02  # point in the mesh [x_min, x_max]x[y_min, y_max].
+    h = 0.2  # point in the mesh [x_min, x_max]x[y_min, y_max].
 
     # Plot the decision boundary. For that, we will assign a color to each
     x_min, x_max = reduced_data[:, 0].min() - 1, reduced_data[:, 0].max() + 1
