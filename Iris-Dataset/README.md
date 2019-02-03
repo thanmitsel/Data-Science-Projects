@@ -5,10 +5,9 @@ This code is oriented to apply some common analysis techniques in one of the mos
 ## Descriptive Statistics
 In this example the following was utilized to kickstart the analysis:
 * Scatter plots
-
 ![alt text](https://github.com/thanmitsel/Data-Science-Projects/blob/master/Iris-Dataset/images/scatter-plot.png)
-
 * Histograms
+![alt text](https://github.com/thanmitsel/Data-Science-Projects/blob/master/Iris-Dataset/images/histogram-plot.png)
 * Means
 * Standard Deviations
 
